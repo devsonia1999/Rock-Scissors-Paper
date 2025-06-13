@@ -1,0 +1,171 @@
+/* 기본 Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'DOSGothic';
+  height: 100%;
+  text-align: center;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 폰트 */
+@font-face {
+  font-family: 'Ramche';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Ramche.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DOSGothic';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSGothic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 애니메이션 */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.none{
+  display: none!important;
+}
+
+.wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.footer{
+  position: absolute;
+  bottom: 5%; left: 50%;
+  transform: translateX(-50%);
+}
+
+.icon{
+  position: absolute;
+  font-size: 40px;
+}
+.icon.top{
+  top: 20%;
+  left: 50%;
+}
+.icon.bottom{
+  bottom: 20%;
+  left: 50%;
+}
+.icon.left{
+  left: 20%;
+  bottom: 40%;
+}
+.icon.right{
+  top: 60%;
+  right: 25%;
+}
+
+.blink{
+  animation: blink 0.8s infinite;
+}
+
+.text{
+  margin: 0 0 30px;
+  font-family: 'Ramche';
+  font-weight: lighter;
+  letter-spacing: -10px;
+  font-size: 90px;
+  color: #000;
+}
+
+.btn{
+  display: inline-block;
+  border: 2px solid #222;
+  width: 220px;
+  height: 150px;
+  padding: 5px 60px;
+  margin: 15px;
+  font-size: 50px;
+}
+.btn:hover{
+  background-color: #222;
+  font-size: 90px;
+  color: #fff;
+  transition: font 0.1s;
+}
+.btn span{
+  display: block;
+  font-size: 30px;
+}
+.btn:hover span{
+  display: none;
+  font-size: 30px;
+}
+
+.btnStart{
+  background-color: #222;
+  width: 150px;
+  height: 50px;
+  padding: 5px 0;
+  margin: 50px;
+  font-size: 20px;
+  color: #fff;
+}
+.btnStart:hover{
+  border: 2px solid #222;
+  background-color: #fff;
+  color: #222;
+}
+
+.gameBoard .autoPick{
+  display: grid;
+  height: 200px;
+  margin: 50px 0 0;
+  font-size: 150px;
+}
+.gameBoard .autoPick li{
+  display: none;
+}
+.gameBoard .autoPick li.on{
+  display: block;
+}
+
+.gameBoard .selectPick{
+  display: flex;
+}

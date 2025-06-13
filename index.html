@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock-Scissors-Paper</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <div class="wrap">
+    <!-- intro 화면 -->
+    <div class="intro">
+      <span class="icon bottom">⊹ 🕹️⊹</span>
+      <span class="icon left top">🎮</span>
+      <span class="icon left">🌈</span>
+      <span class="icon right blink">⚡</span>
+      <span class="icon top">☀️</span>
+      <h1 class="title blink">묵찌빠 게임을 시작하시겠습니까?</h1>
+      <div class="button-container">
+        <button id="start-button" class="btnStart">시작하기</button>
+      </div>
+    </div>
+    <!-- 게임 화면 -->
+    <div class="gameBoard none">
+      <h1 class="blink">｡𖦹°‧ 묵.찌.빠.묵.찌.빠 ₊˚⊹ᰔ</h1>
+      <ul class="autoPick">
+        <li class="rock on">👊🏻</li>
+        <li class="scissors">✌🏻</li>
+        <li class="paper">🖐🏻</li>
+      </ul>
+      <p class="text">vs</p>
+      <ul class="selectPick">
+        <li><button type="button" class="btn">👊🏻<span>묵</span></button></li>
+        <li><button type="button" class="btn">✌🏻<span>찌</span></button></li>
+        <li><button type="button" class="btn">🖐🏻<span>빠</span></button></li>
+      </ul>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer class="footer">
+    <p>ⓒ 2025. SONY All rights reserved.</p>
+  </footer>
+</body>
+</html>
